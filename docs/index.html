@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introduction to Computing and Programming</title>
+    <meta
+      name="description"
+      content="A standalone beginner-first course on computers, operating systems, terminals, Git, editors, and programming."
+    />
+    <style>
+      :root {
+        --bg: #0b1220;
+        --bg2: #121d31;
+        --ink: #ecf2ff;
+        --muted: #9eb1cf;
+        --line: rgba(236, 242, 255, 0.12);
+        --accent: #5ce1b9;
+        --accent2: #ffb85c;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(92, 225, 185, 0.15), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(255, 184, 92, 0.12), transparent 24%),
+          linear-gradient(160deg, var(--bg), var(--bg2));
+      }
+      .wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 32px 20px 72px;
+      }
+      .hero {
+        padding: 42px 0 28px;
+      }
+      h1 {
+        font-size: clamp(2.3rem, 5vw, 4.6rem);
+        line-height: 0.95;
+        margin: 0 0 16px;
+        max-width: 900px;
+      }
+      .lede {
+        color: var(--muted);
+        font-size: 1.08rem;
+        max-width: 760px;
+        line-height: 1.7;
+      }
+      .cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 16px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid var(--line);
+      }
+      .btn--primary {
+        background: var(--accent);
+        color: #06261e;
+        border-color: transparent;
+      }
+      .btn--ghost {
+        color: var(--ink);
+        background: rgba(255,255,255,0.04);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .card {
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.04);
+        border-radius: 22px;
+        padding: 18px;
+      }
+      .card h2 {
+        margin-top: 0;
+        font-size: 1.05rem;
+      }
+      .card p, .card li {
+        color: var(--muted);
+        line-height: 1.65;
+      }
+      .card ul {
+        padding-left: 18px;
+        margin: 10px 0 0;
+      }
+      .section {
+        margin-top: 28px;
+      }
+      .section h2 {
+        margin-bottom: 10px;
+      }
+      .path {
+        display: inline-block;
+        padding: 10px 14px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(255,255,255,0.03);
+        font-weight: 700;
+      }
+      a { color: var(--ink); }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="path">computer -> operating system -> terminal -> editor -> git -> code -> projects -> proof</div>
+        <h1>Introduction to Computing and Programming</h1>
+        <p class="lede">
+          A beginner-first course that teaches computing properly. Not just syntax, but the full starting stack:
+          devices, operating systems, editors, Git, terminals, programming, and proof-of-work.
+        </p>
+        <div class="cta">
+          <a class="btn btn--primary" href="../README.md">Open the Repo Guide</a>
+          <a class="btn btn--ghost" href="../START.md">Start Here</a>
+          <a class="btn btn--ghost" href="../setup/SETUP_INDEX.md">Set Up Your Device</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>What learners get</h2>
+          <ul>
+            <li>Computer foundations</li>
+            <li>Windows, Linux, macOS, and Termux setup</li>
+            <li>Terminal confidence</li>
+            <li>Git and GitHub fundamentals</li>
+            <li>Python-first programming</li>
+            <li>Projects with documentation and proof</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>What instructors get</h2>
+          <ul>
+            <li>Week-by-week syllabus</li>
+            <li>Instructor guide</li>
+            <li>Assessment rubrics</li>
+            <li>Lesson templates</li>
+            <li>Labs and starter projects</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Why this exists</h2>
+          <p>
+            Most beginners are pushed straight into code without being shown where code lives, how programs run,
+            or how to set up tools well. This course closes that gap.
+          </p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Core files</h2>
+        <div class="grid">
+          <article class="card">
+            <h2>Course map</h2>
+            <p><a href="../MODULES.md">MODULES.md</a></p>
+          </article>
+          <article class="card">
+            <h2>Syllabus</h2>
+            <p><a href="../SYLLABUS_WEEK_BY_WEEK.md">SYLLABUS_WEEK_BY_WEEK.md</a></p>
+          </article>
+          <article class="card">
+            <h2>Setup guides</h2>
+            <p><a href="../setup/SETUP_INDEX.md">setup/SETUP_INDEX.md</a></p>
+          </article>
+          <article class="card">
+            <h2>Labs</h2>
+            <p><a href="../labs/LABS_INDEX.md">labs/LABS_INDEX.md</a></p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
