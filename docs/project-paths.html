@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Paths | Introduction to Computing and Programming</title>
+    <meta
+      name="description"
+      content="Move from foundations into live project repos with setup steps for HACKCLUB and JAVASCRIPT."
+    />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">EruditeWBT Course</span>
+          <span class="brand__title">Project Paths</span>
+        </div>
+        <nav class="nav" aria-label="Page navigation">
+          <a href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./syllabus.html">Syllabus</a>
+          <a href="./setup.html">Setup</a>
+          <a href="./labs.html">Labs</a>
+          <a class="is-active" href="./project-paths.html">Projects</a>
+        </nav>
+      </header>
+
+      <div class="docLayout">
+        <main class="docShell">
+          <section class="docHero">
+            <span class="eyebrow">Next repositories</span>
+            <h1>Finish the foundations, then move into a live repo and start shipping.</h1>
+            <p class="docIntro">
+              This page is the bridge from the intro course into the prepared project repos. The goal is simple:
+              finish setup once, join the community, pick a direction, and start building in a real repo without
+              guessing what to do first.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Before you jump</span>
+            <h2>Make sure these are already true</h2>
+            <div class="docList">
+              <div class="docListItem">
+                <strong>Terminal confidence</strong>
+                You can navigate folders and run commands without freezing.
+              </div>
+              <div class="docListItem">
+                <strong>Editor confidence</strong>
+                You can open a project in VS Code and run code from the integrated terminal.
+              </div>
+              <div class="docListItem">
+                <strong>Git basics</strong>
+                You can initialize a repo, make commits, and push or read repo history.
+              </div>
+            </div>
+            <div class="miniLinks">
+              <a href="./setup.html">Check setup page</a>
+              <a href="./labs.html">Check labs page</a>
+              <a href="../labs/EDITOR_IDE_SETUP.md">Editor lab</a>
+              <a href="../labs/GIT_BASICS.md">Git lab</a>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Path 1</span>
+            <h2>HACKCLUB</h2>
+            <p>
+              Use HACKCLUB if you want Python-first AI practice, modular learning pages, runnable snippets, and
+              experimentation across AI, web, and automation.
+            </p>
+            <div class="docList">
+              <div class="docListItem">
+                <strong>Clone and enter</strong>
+                <code>git clone https://github.com/eruditewbt/HACKCLUB.git</code><br />
+                <code>cd HACKCLUB</code>
+              </div>
+              <div class="docListItem">
+                <strong>Windows PowerShell setup</strong>
+                <code>python -m venv .venv</code><br />
+                <code>.venv\Scripts\Activate.ps1</code><br />
+                <code>python -m pip install --upgrade pip</code><br />
+                <code>pip install pytest fastapi uvicorn pydantic numpy pandas scikit-learn matplotlib</code>
+              </div>
+              <div class="docListItem">
+                <strong>Linux/macOS/bash setup</strong>
+                <code>python3 -m venv .venv</code><br />
+                <code>source .venv/bin/activate</code><br />
+                <code>python -m pip install --upgrade pip</code><br />
+                <code>pip install pytest fastapi uvicorn pydantic numpy pandas scikit-learn matplotlib</code>
+              </div>
+              <div class="docListItem">
+                <strong>Open first</strong>
+                <code>COURSE/python_ai_modular/index.html</code><br />
+                Start with:
+                <code>python_snippets/course_basics/variables_and_flow.py</code>
+              </div>
+            </div>
+            <div class="miniLinks">
+              <a href="https://github.com/eruditewbt/HACKCLUB" target="_blank" rel="noreferrer">Open HACKCLUB repo</a>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Path 2</span>
+            <h2>JAVASCRIPT</h2>
+            <p>
+              Use JAVASCRIPT if you want JavaScript systems training, Node.js workflow, collaborative project work,
+              and stronger product-quality habits.
+            </p>
+            <div class="docList">
+              <div class="docListItem">
+                <strong>Clone and enter</strong>
+                <code>git clone https://github.com/eruditewbt/JAVASCRIPT.git</code><br />
+                <code>cd JAVASCRIPT</code>
+              </div>
+              <div class="docListItem">
+                <strong>Verify tools</strong>
+                <code>node -v</code><br />
+                <code>npm -v</code><br />
+                <code>git --version</code>
+              </div>
+              <div class="docListItem">
+                <strong>Install dependencies</strong>
+                <code>npm install</code>
+              </div>
+              <div class="docListItem">
+                <strong>Run first checks</strong>
+                <code>npm run repo:smoke</code><br />
+                <code>npm run repo:audit</code>
+              </div>
+              <div class="docListItem">
+                <strong>Open first</strong>
+                <code>plan.md</code><br />
+                <code>course/</code><br />
+                <code>javascript-training/</code>
+              </div>
+            </div>
+            <div class="miniLinks">
+              <a href="https://github.com/eruditewbt/JAVASCRIPT" target="_blank" rel="noreferrer">Open JAVASCRIPT repo</a>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Community loop</span>
+            <h2>Do this as soon as you enter a live repo</h2>
+            <div class="docList">
+              <div class="docListItem">
+                <strong>1. Join Discord</strong>
+                Post your setup proof or your first blocker.
+              </div>
+              <div class="docListItem">
+                <strong>2. Subscribe on YouTube</strong>
+                Follow the course and community direction there too.
+              </div>
+              <div class="docListItem">
+                <strong>3. Pick one small task</strong>
+                Do not try to absorb the whole repo in one sitting.
+              </div>
+              <div class="docListItem">
+                <strong>4. Commit visible progress</strong>
+                A small working commit is the right first win.
+              </div>
+            </div>
+            <div class="miniLinks">
+              <a href="https://discord.gg/8e4bQNknA" target="_blank" rel="noreferrer">Join Discord</a>
+              <a href="https://www.youtube.com/@eruditewbt" target="_blank" rel="noreferrer">Subscribe on YouTube</a>
+            </div>
+          </section>
+        </main>
+
+        <aside class="docAside">
+          <h3 class="docAsideTitle">Quick recommendation</h3>
+          <div class="stat">
+            <span class="stat__value">Still new?</span>
+            <span class="stat__label">Move from this repo into HACKCLUB first. It is the gentler bridge from foundations into real experimentation.</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat__value">Ready for product workflow?</span>
+            <span class="stat__label">Move into JAVASCRIPT if you already understand the basics and want stronger systems discipline.</span>
+          </div>
+
+          <div class="linkList">
+            <a href="../PROJECT_PATHS.md">Raw project paths markdown</a>
+            <a href="../COMMUNITY_AND_REPOS.md">Community and repos map</a>
+            <a href="https://github.com/eruditewbt/HACKCLUB" target="_blank" rel="noreferrer">HACKCLUB repo</a>
+            <a href="https://github.com/eruditewbt/JAVASCRIPT" target="_blank" rel="noreferrer">JAVASCRIPT repo</a>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="foot">
+        <span>Project handoff page for the standalone course site.</span>
+        <div class="footLinks">
+          <a href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./labs.html">Labs</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
