@@ -3,184 +3,309 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Introduction to Computing and Programming</title>
+    <title>Introduction to Computing and Programming | EruditeWBT</title>
     <meta
       name="description"
-      content="A standalone beginner-first course on computers, operating systems, terminals, Git, editors, and programming."
+      content="A complete beginner-first course on computing, devices, operating systems, terminals, Git, editors, programming, and proof-of-work."
     />
-    <style>
-      :root {
-        --bg: #0b1220;
-        --bg2: #121d31;
-        --ink: #ecf2ff;
-        --muted: #9eb1cf;
-        --line: rgba(236, 242, 255, 0.12);
-        --accent: #5ce1b9;
-        --accent2: #ffb85c;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(92, 225, 185, 0.15), transparent 28%),
-          radial-gradient(circle at bottom right, rgba(255, 184, 92, 0.12), transparent 24%),
-          linear-gradient(160deg, var(--bg), var(--bg2));
-      }
-      .wrap {
-        max-width: 1120px;
-        margin: 0 auto;
-        padding: 32px 20px 72px;
-      }
-      .hero {
-        padding: 42px 0 28px;
-      }
-      h1 {
-        font-size: clamp(2.3rem, 5vw, 4.6rem);
-        line-height: 0.95;
-        margin: 0 0 16px;
-        max-width: 900px;
-      }
-      .lede {
-        color: var(--muted);
-        font-size: 1.08rem;
-        max-width: 760px;
-        line-height: 1.7;
-      }
-      .cta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 22px;
-      }
-      .btn {
-        display: inline-block;
-        padding: 12px 16px;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 700;
-        border: 1px solid var(--line);
-      }
-      .btn--primary {
-        background: var(--accent);
-        color: #06261e;
-        border-color: transparent;
-      }
-      .btn--ghost {
-        color: var(--ink);
-        background: rgba(255,255,255,0.04);
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 16px;
-        margin-top: 28px;
-      }
-      .card {
-        border: 1px solid var(--line);
-        background: rgba(255,255,255,0.04);
-        border-radius: 22px;
-        padding: 18px;
-      }
-      .card h2 {
-        margin-top: 0;
-        font-size: 1.05rem;
-      }
-      .card p, .card li {
-        color: var(--muted);
-        line-height: 1.65;
-      }
-      .card ul {
-        padding-left: 18px;
-        margin: 10px 0 0;
-      }
-      .section {
-        margin-top: 28px;
-      }
-      .section h2 {
-        margin-bottom: 10px;
-      }
-      .path {
-        display: inline-block;
-        padding: 10px 14px;
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        background: rgba(255,255,255,0.03);
-        font-weight: 700;
-      }
-      a { color: var(--ink); }
-    </style>
+    <link rel="stylesheet" href="./site.css" />
   </head>
   <body>
-    <main class="wrap">
-      <section class="hero">
-        <div class="path">computer -> operating system -> terminal -> editor -> git -> code -> projects -> proof</div>
-        <h1>Introduction to Computing and Programming</h1>
-        <p class="lede">
-          A beginner-first course that teaches computing properly. Not just syntax, but the full starting stack:
-          devices, operating systems, editors, Git, terminals, programming, and proof-of-work.
-        </p>
-        <div class="cta">
-          <a class="btn btn--primary" href="../README.md">Open the Repo Guide</a>
-          <a class="btn btn--ghost" href="../START.md">Start Here</a>
-          <a class="btn btn--ghost" href="../setup/SETUP_INDEX.md">Set Up Your Device</a>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">EruditeWBT Course</span>
+          <span class="brand__title">Introduction to Computing and Programming</span>
         </div>
-      </section>
+        <nav class="nav" aria-label="Section navigation">
+          <a class="is-active" href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./syllabus.html">Syllabus</a>
+          <a href="./setup.html">Setup</a>
+          <a href="./labs.html">Labs</a>
+        </nav>
+      </header>
 
-      <section class="grid">
-        <article class="card">
-          <h2>What learners get</h2>
-          <ul>
-            <li>Computer foundations</li>
-            <li>Windows, Linux, macOS, and Termux setup</li>
-            <li>Terminal confidence</li>
-            <li>Git and GitHub fundamentals</li>
-            <li>Python-first programming</li>
-            <li>Projects with documentation and proof</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h2>What instructors get</h2>
-          <ul>
-            <li>Week-by-week syllabus</li>
-            <li>Instructor guide</li>
-            <li>Assessment rubrics</li>
-            <li>Lesson templates</li>
-            <li>Labs and starter projects</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h2>Why this exists</h2>
-          <p>
-            Most beginners are pushed straight into code without being shown where code lives, how programs run,
-            or how to set up tools well. This course closes that gap.
+      <section class="hero" id="overview">
+        <article class="hero__main">
+          <span class="eyebrow">Beginner-first. System-first. Proof-first.</span>
+          <h1>Learn how computing actually works before you learn how to chase syntax.</h1>
+          <p class="lede">
+            This GitHub Pages front door is the full introduction to the standalone course repo. It covers what a
+            computer is, how devices and operating systems work, how to set up your environment on popular platforms,
+            how to use editors and terminals, how Git fits in, how programming languages run, and how to turn all of
+            that into real beginner projects and proof-of-work.
           </p>
+          <div class="formula" aria-label="Learning progression">
+            <span>computer</span>
+            <span>operating system</span>
+            <span>terminal</span>
+            <span>editor / IDE</span>
+            <span>git</span>
+            <span>code</span>
+            <span>projects</span>
+            <span>proof</span>
+          </div>
+          <div class="cta">
+            <a class="btn btn--primary" href="./start.html">Start Here</a>
+            <a class="btn btn--secondary" href="./syllabus.html">Open Syllabus</a>
+            <a class="btn btn--secondary" href="../README.md">Read Repo Guide</a>
+          </div>
         </article>
+
+        <aside class="hero__side">
+          <div class="stat">
+            <span class="stat__value">26 Weeks</span>
+            <span class="stat__label">Structured core track from first principles to beginner capstone.</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">4 Device Paths</span>
+            <span class="stat__label">Windows, Linux, macOS, and Android with Termux.</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">1 Real Stack</span>
+            <span class="stat__label">Files, shell, editor, Git, Python, debugging, documentation, and publishing.</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">Built to Teach</span>
+            <span class="stat__label">Instructor guide, rubrics, labs, templates, and project proofs included.</span>
+          </div>
+        </aside>
       </section>
 
       <section class="section">
-        <h2>Core files</h2>
-        <div class="grid">
+        <div class="section__head">
+          <h2>What This Course Solves</h2>
+          <p>Most beginner programming material assumes the environment is already magical. This course removes that magic gap and teaches the full entry stack cleanly.</p>
+        </div>
+        <div class="grid grid--3">
           <article class="card">
-            <h2>Course map</h2>
-            <p><a href="../MODULES.md">MODULES.md</a></p>
+            <h3>The missing computer model</h3>
+            <p>Beginners are usually told to type code before they understand input, processing, memory, storage, instructions, or how apps run.</p>
+            <div class="chips">
+              <span class="chip">CPU</span>
+              <span class="chip">RAM</span>
+              <span class="chip">Storage</span>
+              <span class="chip">Fetch / decode / execute</span>
+            </div>
           </article>
           <article class="card">
-            <h2>Syllabus</h2>
-            <p><a href="../SYLLABUS_WEEK_BY_WEEK.md">SYLLABUS_WEEK_BY_WEEK.md</a></p>
+            <h3>The missing toolchain</h3>
+            <p>People get stuck on setup, terminals, paths, editors, Git, and file structure long before they get stuck on algorithms.</p>
+            <div class="chips">
+              <span class="chip">VS Code</span>
+              <span class="chip">PowerShell</span>
+              <span class="chip">bash</span>
+              <span class="chip">Git</span>
+            </div>
           </article>
           <article class="card">
-            <h2>Setup guides</h2>
-            <p><a href="../setup/SETUP_INDEX.md">setup/SETUP_INDEX.md</a></p>
-          </article>
-          <article class="card">
-            <h2>Labs</h2>
-            <p><a href="../labs/LABS_INDEX.md">labs/LABS_INDEX.md</a></p>
+            <h3>The missing proof layer</h3>
+            <p>Learning becomes real only when each week ends in something you can show: notes, diagrams, scripts, repo history, screenshots, and project demos.</p>
+            <div class="chips">
+              <span class="chip">README</span>
+              <span class="chip">Screenshots</span>
+              <span class="chip">Commits</span>
+              <span class="chip">Mini-projects</span>
+            </div>
           </article>
         </div>
       </section>
-    </main>
+
+      <section class="section" id="journey">
+        <div class="section__head">
+          <h2>The Learning Journey</h2>
+          <p>The course is structured as a sequence, not a random pile of topics. Each phase prepares the next phase so beginners stay grounded.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__card">
+            <span class="timeline__week">Weeks 1-7</span>
+            <h3>What a Computer Is</h3>
+            <ul>
+              <li>Input, process, output</li>
+              <li>Bits, bytes, representation</li>
+              <li>CPU, RAM, storage, motherboard</li>
+              <li>Building and troubleshooting basics</li>
+            </ul>
+          </article>
+          <article class="timeline__card">
+            <span class="timeline__week">Weeks 8-12</span>
+            <h3>Operating Systems and Tooling</h3>
+            <ul>
+              <li>Filesystems and processes</li>
+              <li>PATH, packages, installers</li>
+              <li>PowerShell, bash, cmd, Termux</li>
+              <li>Editors, IDEs, Git, GitHub</li>
+            </ul>
+          </article>
+          <article class="timeline__card">
+            <span class="timeline__week">Weeks 13-14</span>
+            <h3>Networking Basics</h3>
+            <ul>
+              <li>IP, DNS, HTTP</li>
+              <li>Client / server mental model</li>
+              <li>Latency, reliability, caching</li>
+              <li>Basic troubleshooting</li>
+            </ul>
+          </article>
+          <article class="timeline__card">
+            <span class="timeline__week">Weeks 15-23</span>
+            <h3>Programming Foundations</h3>
+            <ul>
+              <li>Python first</li>
+              <li>Variables, loops, functions</li>
+              <li>Files and JSON</li>
+              <li>Runtime, packages, compiler vs interpreter</li>
+            </ul>
+          </article>
+          <article class="timeline__card">
+            <span class="timeline__week">Weeks 24-26</span>
+            <h3>Projects and Proof</h3>
+            <ul>
+              <li>Capstone proposal</li>
+              <li>MVP build sprint</li>
+              <li>Documentation and demo</li>
+              <li>Peer review and publish</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2>Everything This Covers</h2>
+          <p>This page is meant to feel complete enough to orient a beginner, an instructor, or a community lead before they ever open the supporting materials.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card">
+            <h3>Computing foundations</h3>
+            <ul>
+              <li>What a computer is</li>
+              <li>Hardware vs software</li>
+              <li>Classical, quantum, analog, hybrid computing</li>
+              <li>How instructions execute</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Device setup</h3>
+            <ul>
+              <li>Windows 10/11</li>
+              <li>Ubuntu / Debian Linux</li>
+              <li>macOS</li>
+              <li>Android with Termux</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tooling essentials</h3>
+            <ul>
+              <li>VS Code and editor workflow</li>
+              <li>Integrated terminal</li>
+              <li>Format on save</li>
+              <li>Repo hygiene and folder structure</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Version control</h3>
+            <ul>
+              <li>Git mental model</li>
+              <li>Commits, branches, merges, remotes</li>
+              <li>GitHub publishing</li>
+              <li><code>.gitignore</code> and clean history</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Shells and scripting</h3>
+            <ul>
+              <li>PowerShell</li>
+              <li><code>cmd</code> and <code>.bat</code></li>
+              <li>bash / zsh</li>
+              <li>Basic automation thinking</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python first</li>
+              <li>Hello world to mini-projects</li>
+              <li>Debugging mindset</li>
+              <li>Files, JSON, packages</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>How languages work</h3>
+            <ul>
+              <li>Interpreter vs compiler</li>
+              <li>Runtime and libraries</li>
+              <li>Source to run loop</li>
+              <li>Language survey for breadth</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Proof of work</h3>
+            <ul>
+              <li>Readmes and diagrams</li>
+              <li>Screenshots and demos</li>
+              <li>Published repos</li>
+              <li>Capstone and peer review</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2>Key Course Pages</h2>
+          <p>The main GitHub Pages experience now has dedicated docs pages instead of forcing visitors into raw markdown immediately.</p>
+        </div>
+        <div class="resourceGrid">
+          <article class="resource">
+            <h3>Start</h3>
+            <p>Fast onboarding for learners and instructors.</p>
+            <div class="miniLinks">
+              <a href="./start.html">Open start page</a>
+            </div>
+          </article>
+          <article class="resource">
+            <h3>Syllabus</h3>
+            <p>A readable course journey across the full 26-week core track.</p>
+            <div class="miniLinks">
+              <a href="./syllabus.html">Open syllabus page</a>
+            </div>
+          </article>
+          <article class="resource">
+            <h3>Setup and Labs</h3>
+            <p>Device paths and practical exercises surfaced as proper pages.</p>
+            <div class="miniLinks">
+              <a href="./setup.html">Open setup page</a>
+              <a href="./labs.html">Open labs page</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ctaBand">
+        <h2>Deploy this as GitHub Pages, then teach from it immediately.</h2>
+        <p>
+          Someone can land here, understand the purpose, pick the right setup path, start the first labs, see the full
+          learning arc, and move through the site without the experience breaking into raw repository pages right away.
+        </p>
+        <div class="cta">
+          <a class="btn btn--primary" href="./start.html">Start as a learner</a>
+          <a class="btn btn--secondary" href="./setup.html">Pick a device setup</a>
+          <a class="btn btn--secondary" href="./labs.html">Open labs</a>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <span>Powered by EruditeWBT. Beginner-first computing education with a real tooling stack.</span>
+        <div class="footLinks">
+          <a href="../README.md">Repo</a>
+          <a href="./start.html">Start</a>
+          <a href="https://discord.gg/8e4bQNknA" target="_blank" rel="noreferrer">Discord</a>
+          <a href="https://www.youtube.com/@eruditewbt" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
 
