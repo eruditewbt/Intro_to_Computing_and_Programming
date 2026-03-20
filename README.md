@@ -2,55 +2,97 @@
 
 _Powered by EruditeWBT_
 
-A standalone foundations repo for teaching computing properly:
-
-- what a computer is
-- how hardware, operating systems, networks, and code fit together
-- how to set up real devices and tools
-- how to start coding with proof-of-work, not just theory
-
-This repo is designed for:
-
-- absolute beginners
-- community instructors
-- self-learners who want structure
-- schools, clubs, and local study groups
-
-## Vision
-
-Most beginner programming material starts too late.
-
-It starts at `print("Hello, world")` without first building the mental model of:
+A beginner-first course repo for learning computing properly:
 
 - what a computer actually is
+- how hardware, operating systems, networks, terminals, editors, and Git fit together
+- how to set up real devices
+- how to start coding and ship proof-of-work fast
+
+This repo is for:
+
+- absolute beginners
+- self-learners
+- community instructors
+- schools, clubs, and study groups
+
+## What Makes This Different
+
+Most beginner coding material starts too late.
+
+It starts with `Hello, world` before showing:
+
 - where code runs
-- how files, terminals, editors, Git, and operating systems fit together
+- how files and folders work
+- what a shell is
+- why Git matters
+- how to set up a real machine without getting stuck
 
 This repo fixes that.
 
-The learning progression is:
+Learning progression:
 
 `computer -> operating system -> terminal -> editor -> git -> code -> projects -> proof`
 
-## What This Covers
+## Start Coding Straight Away
+
+If you want the fastest path from zero to building:
+
+1. Open the course site: `docs/index.html`
+2. Use the start page: `docs/start.html`
+3. Pick your device path in `docs/setup.html`
+4. Run `labs/EDITOR_IDE_SETUP.md`
+5. Run `labs/GIT_BASICS.md`
+6. Join the community and share your first proof
+
+## Join the Ecosystem
+
+Start here, then plug into the wider community:
+
+- Discord: https://discord.gg/8e4bQNknA
+- YouTube: https://www.youtube.com/@eruditewbt
+- LinkedIn: https://www.linkedin.com/in/chemiosis-daniel-34542826a
+- Main community repo: https://github.com/eruditewbt/Tech_Community_by_EruditeWBT
+- Engineering tree repo: https://github.com/eruditewbt/engineering-tree-community_repo
+- HACKCLUB: https://github.com/eruditewbt/HACKCLUB
+- JAVASCRIPT: https://github.com/eruditewbt/JAVASCRIPT
+
+## Pick a Repo and Start Building
+
+Use this repo for foundations. Then move into the repo that matches what you want to build next:
+
+- Intro to Computing and Programming:
+  Start here if you need fundamentals, setup, Git, tooling, and first projects.
+- Tech Community by EruditeWBT:
+  Use this for the broader ecosystem, civilization graph, growth paths, community systems, and platform direction.
+- Engineering Tree Community:
+  Use this when you want the builder-network framing and engineering tree structure.
+- Language-specific repos such as JavaScript or TypeScript:
+  Use these when you are ready to deepen in one stack.
+
+Detailed next-repo setup guide:
+
+- `PROJECT_PATHS.md`
+
+## What This Repo Covers
 
 - Computer foundations:
   - input, process, output
-  - bits, bytes, data representation
+  - bits, bytes, and representation
   - CPU, RAM, storage, motherboard, peripherals
-  - how computers execute instructions
+  - how instructions execute
 - Device setup:
   - Windows
   - Linux
   - macOS
   - Android with Termux
-- Tooling foundations:
-  - VS Code / editors / IDEs
+- Tooling:
+  - VS Code, editors, IDEs
   - PowerShell
   - `cmd` and `.bat`
   - bash / zsh
   - Git and GitHub
-- Programming foundations:
+- Programming:
   - Python first
   - variables, conditions, loops, functions, files, JSON
   - interpreters vs compilers
@@ -58,30 +100,65 @@ The learning progression is:
 - Computing breadth:
   - networking basics
   - classical vs quantum vs analog/hybrid computing
-  - projects, debugging, documentation, proof-of-work
+  - debugging, documentation, proof-of-work
 
-## Start Here
+## Core Pages
 
-1. Read [START.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/START.md)
-2. Read [SYLLABUS_WEEK_BY_WEEK.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/SYLLABUS_WEEK_BY_WEEK.md)
-3. Pick your device guide in [setup/SETUP_INDEX.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/setup/SETUP_INDEX.md)
-4. Run the first lab in [labs/EDITOR_IDE_SETUP.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/labs/EDITOR_IDE_SETUP.md)
-5. Create your first repo with [labs/GIT_BASICS.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/labs/GIT_BASICS.md)
+- `docs/index.html`
+- `docs/start.html`
+- `docs/syllabus.html`
+- `docs/setup.html`
+- `docs/labs.html`
 
-## Structure
+## Core Files
 
-- [MODULES.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/MODULES.md)
-- [SYLLABUS_WEEK_BY_WEEK.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/SYLLABUS_WEEK_BY_WEEK.md)
-- [INSTRUCTOR_GUIDE.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/INSTRUCTOR_GUIDE.md)
-- [ASSESSMENT_RUBRICS.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/ASSESSMENT_RUBRICS.md)
-- [setup/SETUP_INDEX.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/setup/SETUP_INDEX.md)
-- [tools/SHELL_CHEATSHEETS.md](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/tools/SHELL_CHEATSHEETS.md)
-- [labs/](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/labs)
-- [projects/](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/projects)
-- [templates/](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/templates)
-- [docs/index.html](/C:/Users/eruditewbt/Documents/GitHub/eruditewbt/generated_content/Intro_to_Computing_and_Programming/docs/index.html)
+- `START.md`
+- `MODULES.md`
+- `SYLLABUS_WEEK_BY_WEEK.md`
+- `INSTRUCTOR_GUIDE.md`
+- `ASSESSMENT_RUBRICS.md`
+- `README_MAP.md`
+- `COMMUNITY_AND_REPOS.md`
+- `PROJECT_PATHS.md`
 
-## Outcomes
+## Device and Tooling Paths
+
+- `setup/SETUP_INDEX.md`
+- `setup/WINDOWS.md`
+- `setup/LINUX.md`
+- `setup/MAC.md`
+- `setup/ANDROID_TERMUX.md`
+- `tools/SHELL_CHEATSHEETS.md`
+
+## Labs and Projects
+
+- `labs/LABS_INDEX.md`
+- `labs/EDITOR_IDE_SETUP.md`
+- `labs/GIT_BASICS.md`
+- `projects/PROJECTS.md`
+
+Prepared next-step repos:
+
+- HACKCLUB for Python-first AI and experimentation
+- JAVASCRIPT for JavaScript systems training and collaborative product work
+
+The projects are already structured so learners can move quickly into something publishable:
+
+- file organizer
+- simple dataset report
+- quiz and scoring system
+- capstone starter ideas
+
+## For Instructors
+
+Use these to run the course as a real community system:
+
+- `INSTRUCTOR_GUIDE.md`
+- `templates/LESSON_PLAN_TEMPLATE.md`
+- `templates/DISCORD_WEEKLY_POST.md`
+- `templates/PROOF_OF_WORK_TEMPLATE.md`
+
+## Outcome
 
 By the end, a learner should be able to:
 
@@ -93,41 +170,10 @@ By the end, a learner should be able to:
 - write and debug beginner programs
 - publish small projects with documentation
 
-## Teaching Model
+## Repo Hygiene
 
-This repo is built around:
+This repo is cleaned for public use:
 
-- explanation
-- diagrams
-- labs
-- projects
-- proof-of-work
-
-Every week should end with something visible:
-
-- a note
-- a screenshot
-- a script
-- a repo
-- a demo
-
-## Community Link
-
-This repo can stand alone, but it also connects naturally to the wider EruditeWBT ecosystem:
-
-- Main community repo: `Tech_Community_by_EruditeWBT`
-- Discord: https://discord.gg/8e4bQNknA
-- YouTube: https://www.youtube.com/@eruditewbt
-
-## Publishing
-
-Repo-level files included:
-
-- `START.md`
-- `README_MAP.md`
-- `ROADMAP.md`
-- `CONTRIBUTING.md`
-- `LICENSE`
-- `.gitignore`
-- `docs/index.html`
-
+- no absolute local filesystem paths
+- GitHub Pages-friendly docs flow
+- repo-level onboarding files included

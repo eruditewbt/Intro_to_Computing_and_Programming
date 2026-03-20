@@ -8,6 +8,10 @@ This repo is organized around real teaching flow.
   Front door and course positioning
 - `START.md`
   Short onboarding
+- `COMMUNITY_AND_REPOS.md`
+  Where learners go next after foundations
+- `PROJECT_PATHS.md`
+  Exact setup and first-step handoff into live project repos
 - `MODULES.md`
   Concept architecture
 - `SYLLABUS_WEEK_BY_WEEK.md`
@@ -35,5 +39,4 @@ This repo is organized around real teaching flow.
 - `diagrams/`
   Mermaid sources for lessons and slides
 - `docs/`
-  Lightweight GitHub Pages landing page
-
+  Multi-page GitHub Pages course site
