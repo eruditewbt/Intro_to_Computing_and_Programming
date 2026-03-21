@@ -56,6 +56,7 @@ Start here, then plug into the wider community:
 - Engineering tree repo: https://github.com/eruditewbt/engineering-tree-community_repo
 - HACKCLUB: https://github.com/eruditewbt/HACKCLUB
 - JAVASCRIPT: https://github.com/eruditewbt/JAVASCRIPT
+- TYPESCRIPT: https://github.com/eruditewbt/TYPESCRIPT
 
 ## Pick a Repo and Start Building
 
