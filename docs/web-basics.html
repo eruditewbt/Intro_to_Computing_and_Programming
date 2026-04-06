@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML, Markdown, and CSS | Introduction to Computing and Programming</title>
+    <meta
+      name="description"
+      content="Simple hands-on introduction to HTML, Markdown, and CSS with working examples you can edit immediately."
+    />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">EruditeWBT Course</span>
+          <span class="brand__title">HTML, Markdown, and CSS</span>
+        </div>
+        <nav class="nav" aria-label="Section navigation">
+          <a href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./syllabus.html">Syllabus</a>
+          <a href="./setup.html">Setup</a>
+          <a href="./terminal.html">Terminal</a>
+          <a href="./git.html">Git</a>
+          <a class="is-active" href="./web-basics.html">Web Basics</a>
+          <a href="./participate.html">Participate</a>
+        </nav>
+      </header>
+
+      <div class="docLayout">
+        <main class="docShell">
+          <section class="docHero">
+            <span class="eyebrow">Simple languages</span>
+            <h1>Play with files that give you visible results immediately.</h1>
+            <p class="docIntro">
+              Before big programming languages, it helps to work with simple files that show you direct cause and
+              effect. HTML gives structure, CSS gives style, and Markdown helps you write clean technical notes and
+              README files.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">HTML</span>
+            <h2>Activity 1: Make a real web page</h2>
+            <p>Create a file named <code>index.html</code> and paste this into it:</p>
+            <pre class="codeblock">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, I am building.&lt;/h1&gt;
+    &lt;p&gt;This page is my first visible output.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+            <p>Now open the file in your browser. That is already a working software artifact.</p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">CSS</span>
+            <h2>Activity 2: Style the page</h2>
+            <p>Create a file named <code>style.css</code>:</p>
+            <pre class="codeblock">body {
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+  padding: 2rem;
+}
+
+h1 {
+  color: #57e1bc;
+}</pre>
+            <p>Then connect it by adding this inside the HTML <code>&lt;head&gt;</code>:</p>
+            <pre class="codeblock">&lt;link rel="stylesheet" href="style.css" /&gt;</pre>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Markdown</span>
+            <h2>Activity 3: Write a good README</h2>
+            <p>Create a file named <code>README.md</code>:</p>
+            <pre class="codeblock"># My First Web Page
+
+## What this is
+A simple page built to practice HTML and CSS.
+
+## What I learned
+- HTML gives structure
+- CSS gives style
+- files become visible output quickly</pre>
+            <p>
+              Markdown matters because almost every serious repo, project note, and contribution flow uses it.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <h2>Hands-on challenge</h2>
+            <div class="checklist">
+              <div class="checkitem"><strong>1</strong> Make a page with your name and one paragraph.</div>
+              <div class="checkitem"><strong>2</strong> Add a background color and heading color.</div>
+              <div class="checkitem"><strong>3</strong> Write a README that explains what you built.</div>
+              <div class="checkitem"><strong>4</strong> Put all 3 files in a Git repo and commit them.</div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <div class="miniLinks">
+              <a href="./git.html">Go back to Git</a>
+              <a href="./participate.html">Join the community workflow</a>
+              <a href="./projects.html">Move into real builds</a>
+            </div>
+          </section>
+        </main>
+
+        <aside class="docAside">
+          <h3 class="docAsideTitle">Why this matters</h3>
+          <div class="stat">
+            <span class="stat__value">Visible wins</span>
+            <span class="stat__label">HTML, CSS, and Markdown give beginners fast visible results and better repo hygiene.</span>
+          </div>
+          <div class="linkList">
+            <a href="https://github.com/eruditewbt/JAVASCRIPT" target="_blank" rel="noreferrer">JAVASCRIPT repo</a>
+            <a href="https://github.com/eruditewbt/TYPESCRIPT" target="_blank" rel="noreferrer">TYPESCRIPT repo</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

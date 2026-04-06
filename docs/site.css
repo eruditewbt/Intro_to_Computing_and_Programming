@@ -415,6 +415,65 @@ h1 {
   font-weight: 700;
 }
 
+.codeblock {
+  margin: 14px 0 0;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(4, 10, 20, 0.92);
+  color: #d7fff0;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.lessonGrid,
+.taskGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.lessonGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.taskGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.callout {
+  margin-top: 16px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(122, 182, 255, 0.08);
+}
+
+.callout strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.checklist {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.checkitem {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.checkitem strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
 .linkList a {
   border-radius: 14px;
   padding: 12px 14px;
@@ -570,4 +629,3 @@ ul {
     font-size: 2.5rem;
   }
 }
-

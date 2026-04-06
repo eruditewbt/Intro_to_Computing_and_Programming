@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Git Hands-On | Introduction to Computing and Programming</title>
+    <meta
+      name="description"
+      content="Hands-on Git guide with real working commands: init, add, commit, status, branch, remote, and push."
+    />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">EruditeWBT Course</span>
+          <span class="brand__title">Git Hands-On</span>
+        </div>
+        <nav class="nav" aria-label="Section navigation">
+          <a href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./syllabus.html">Syllabus</a>
+          <a href="./setup.html">Setup</a>
+          <a href="./terminal.html">Terminal</a>
+          <a class="is-active" href="./git.html">Git</a>
+          <a href="./web-basics.html">Web Basics</a>
+          <a href="./participate.html">Participate</a>
+        </nav>
+      </header>
+
+      <div class="docLayout">
+        <main class="docShell">
+          <section class="docHero">
+            <span class="eyebrow">Version control</span>
+            <h1>Git is how you save work properly, not just how you upload code.</h1>
+            <p class="docIntro">
+              Git helps you track changes, explain what changed, undo mistakes more safely, and collaborate with other
+              people. The goal on this page is simple: create a repo, make a change, commit it, and understand what
+              just happened.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Mental model</span>
+            <h2>What Git actually does</h2>
+            <div class="lessonGrid">
+              <div class="card">
+                <h3>Working directory</h3>
+                <p>The files you are editing right now.</p>
+              </div>
+              <div class="card">
+                <h3>Repository history</h3>
+                <p>The recorded checkpoints of your work.</p>
+              </div>
+            </div>
+            <div class="callout">
+              <strong>Simple formula</strong>
+              Edit files -> check status -> add selected files -> commit with a message -> repeat.
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Copy and run</span>
+            <h2>Activity 1: Create your first repo</h2>
+            <pre class="codeblock">mkdir git-practice
+cd git-practice
+git init
+echo "# Git Practice" > README.md
+git status
+git add README.md
+git commit -m "Add initial README"</pre>
+            <div class="checklist">
+              <div class="checkitem">
+                <strong>Success check</strong>
+                After <code>git commit</code>, Git should tell you one file was committed.
+              </div>
+              <div class="checkitem">
+                <strong>If commit fails</strong>
+                Set your name and email first:
+                <pre class="codeblock">git config --global user.name "Your Name"
+git config --global user.email "you@example.com"</pre>
+              </div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Core commands</span>
+            <h2>The small Git set you should know first</h2>
+            <div class="taskGrid">
+              <div class="card">
+                <h3>See what changed</h3>
+                <pre class="codeblock">git status</pre>
+              </div>
+              <div class="card">
+                <h3>Add files to the next commit</h3>
+                <pre class="codeblock">git add README.md
+git add .</pre>
+              </div>
+              <div class="card">
+                <h3>Save a checkpoint</h3>
+                <pre class="codeblock">git commit -m "Explain the change"</pre>
+              </div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Do something real</span>
+            <h2>Activity 2: Make a second commit</h2>
+            <pre class="codeblock">echo "This repo is for learning Git." >> README.md
+git status
+git add README.md
+git commit -m "Add purpose line to README"
+git log --oneline</pre>
+            <p>
+              You should now see at least two commits. That means you are already building a usable history.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <h2>What to do next</h2>
+            <div class="miniLinks">
+              <a href="./web-basics.html">Try HTML, Markdown, and CSS</a>
+              <a href="./participate.html">Learn the community repo flow</a>
+              <a href="./projects.html">Move into starter builds</a>
+            </div>
+          </section>
+        </main>
+
+        <aside class="docAside">
+          <h3 class="docAsideTitle">Git beginner rule</h3>
+          <div class="stat">
+            <span class="stat__value">Commit small</span>
+            <span class="stat__label">Do not wait until everything is perfect. Save small meaningful checkpoints.</span>
+          </div>
+          <div class="linkList">
+            <a href="./labs.html">Labs page</a>
+            <a href="./project-paths.html">Project paths</a>
+            <a href="https://github.com/eruditewbt/JAVASCRIPT" target="_blank" rel="noreferrer">JAVASCRIPT repo</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

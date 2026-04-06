@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terminal Hands-On | Introduction to Computing and Programming</title>
+    <meta
+      name="description"
+      content="Hands-on terminal guide for Windows, Linux, macOS, and Termux with real commands and beginner activities."
+    />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">EruditeWBT Course</span>
+          <span class="brand__title">Terminal Hands-On</span>
+        </div>
+        <nav class="nav" aria-label="Section navigation">
+          <a href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./syllabus.html">Syllabus</a>
+          <a href="./setup.html">Setup</a>
+          <a class="is-active" href="./terminal.html">Terminal</a>
+          <a href="./git.html">Git</a>
+          <a href="./web-basics.html">Web Basics</a>
+          <a href="./participate.html">Participate</a>
+        </nav>
+      </header>
+
+      <div class="docLayout">
+        <main class="docShell">
+          <section class="docHero">
+            <span class="eyebrow">Hands-on first</span>
+            <h1>Use the terminal to do real work, not just watch it happen.</h1>
+            <p class="docIntro">
+              The terminal is where you learn to control files, run tools, inspect your environment, and start coding
+              with confidence. This page is designed so you can copy commands, run them, and see visible results on
+              Windows first, then Linux, macOS, and Android with Termux.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Mental model</span>
+            <h2>What the terminal actually is</h2>
+            <p>
+              A terminal is a text-based interface for talking to your operating system. It lets you move through
+              folders, create files, run programs, install tools, and automate repeated work. You are not “using
+              hacker magic”. You are giving precise instructions to the computer.
+            </p>
+            <div class="lessonGrid">
+              <div class="card">
+                <h3>Windows</h3>
+                <p>Use PowerShell first. It is the cleanest modern shell on Windows for learning and scripting.</p>
+                <div class="chips">
+                  <span class="chip">PowerShell</span>
+                  <span class="chip">cmd</span>
+                  <span class="chip">.bat</span>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Linux / macOS</h3>
+                <p>Use bash or zsh. Most beginner terminal tutorials on the internet assume this shell style.</p>
+                <div class="chips">
+                  <span class="chip">bash</span>
+                  <span class="chip">zsh</span>
+                  <span class="chip">sh</span>
+                </div>
+              </div>
+            </div>
+            <div class="callout">
+              <strong>Main difference</strong>
+              Windows PowerShell uses object-oriented commands and Windows-style paths. Linux/macOS shells use
+              text-stream commands and Unix-style paths.
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Copy and run</span>
+            <h2>Activity 1: Make your first working folder</h2>
+            <p>Choose the block that matches your device and run it exactly.</p>
+            <div class="lessonGrid">
+              <div class="card">
+                <h3>Windows PowerShell</h3>
+                <pre class="codeblock">mkdir intro-lab
+cd intro-lab
+"hello from powershell" | Set-Content hello.txt
+Get-ChildItem
+Get-Content hello.txt</pre>
+              </div>
+              <div class="card">
+                <h3>Linux / macOS / Termux</h3>
+                <pre class="codeblock">mkdir intro-lab
+cd intro-lab
+echo "hello from shell" > hello.txt
+ls
+cat hello.txt</pre>
+              </div>
+            </div>
+            <div class="checklist">
+              <div class="checkitem">
+                <strong>Success check</strong>
+                You should see a folder, a file named <code>hello.txt</code>, and its contents printed back to you.
+              </div>
+              <div class="checkitem">
+                <strong>What you just learned</strong>
+                Create a folder, move into it, create a file, list files, and read a file.
+              </div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Useful differences</span>
+            <h2>Windows vs Linux/macOS command map</h2>
+            <div class="taskGrid">
+              <div class="card">
+                <h3>List files</h3>
+                <pre class="codeblock">PowerShell: Get-ChildItem
+bash/zsh: ls</pre>
+              </div>
+              <div class="card">
+                <h3>Show current folder</h3>
+                <pre class="codeblock">PowerShell: Get-Location
+bash/zsh: pwd</pre>
+              </div>
+              <div class="card">
+                <h3>Read a file</h3>
+                <pre class="codeblock">PowerShell: Get-Content file.txt
+bash/zsh: cat file.txt</pre>
+              </div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Do something real</span>
+            <h2>Activity 2: Create a tiny project folder for code</h2>
+            <pre class="codeblock">mkdir my-first-code
+cd my-first-code
+mkdir notes src
+echo "# My First Code Folder" > README.md</pre>
+            <p>On Windows PowerShell, the last line can also be:</p>
+            <pre class="codeblock">"# My First Code Folder" | Set-Content README.md</pre>
+            <p>
+              Now open that folder in your editor. This is how terminal + file system + editor start working together.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <h2>What to do next</h2>
+            <div class="miniLinks">
+              <a href="./git.html">Go to Git hands-on</a>
+              <a href="./web-basics.html">Try simple web files</a>
+              <a href="./participate.html">Join the community workflow</a>
+              <a href="./labs.html">Open the labs page</a>
+            </div>
+          </section>
+        </main>
+
+        <aside class="docAside">
+          <h3 class="docAsideTitle">Terminal starter checklist</h3>
+          <div class="checklist">
+            <div class="checkitem"><strong>1</strong> Open PowerShell or bash</div>
+            <div class="checkitem"><strong>2</strong> Create one folder</div>
+            <div class="checkitem"><strong>3</strong> Create one file</div>
+            <div class="checkitem"><strong>4</strong> Read it back</div>
+            <div class="checkitem"><strong>5</strong> Open the folder in your editor</div>
+          </div>
+          <div class="stat">
+            <span class="stat__value">Hands-on rule</span>
+            <span class="stat__label">Every page in this starter track should end with a visible output on your machine.</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
