@@ -6,7 +6,7 @@
     <title>Terminal Hands-On | Introduction to Computing and Programming</title>
     <meta
       name="description"
-      content="Hands-on terminal guide for Windows, Linux, macOS, and Termux with real commands and beginner activities."
+      content="Complete terminal introduction for Windows, Linux, macOS, and Termux: navigation, files, environment variables, packages, and starter scripts."
     />
     <link rel="stylesheet" href="./site.css" />
   </head>
@@ -20,10 +20,11 @@
         <nav class="nav" aria-label="Section navigation">
           <a href="./index.html">Home</a>
           <a href="./start.html">Start</a>
-          <a href="./syllabus.html">Syllabus</a>
           <a href="./setup.html">Setup</a>
           <a class="is-active" href="./terminal.html">Terminal</a>
+          <a href="./editors.html">Editors</a>
           <a href="./git.html">Git</a>
+          <a href="./languages.html">Languages</a>
           <a href="./web-basics.html">Web Basics</a>
           <a href="./participate.html">Participate</a>
         </nav>
@@ -33,53 +34,26 @@
         <main class="docShell">
           <section class="docHero">
             <span class="eyebrow">Hands-on first</span>
-            <h1>Use the terminal to do real work, not just watch it happen.</h1>
+            <h1>The terminal is where you learn to control your machine instead of guessing at it.</h1>
             <p class="docIntro">
-              The terminal is where you learn to control files, run tools, inspect your environment, and start coding
-              with confidence. This page is designed so you can copy commands, run them, and see visible results on
-              Windows first, then Linux, macOS, and Android with Termux.
+              The terminal helps you move through folders, run tools, inspect your environment, create files, automate repetitive work,
+              and start coding with confidence. This page starts from Windows PowerShell, then maps the same thinking to Linux, macOS, and Termux.
             </p>
           </section>
 
           <section class="docSection">
             <span class="docKicker">Mental model</span>
-            <h2>What the terminal actually is</h2>
-            <p>
-              A terminal is a text-based interface for talking to your operating system. It lets you move through
-              folders, create files, run programs, install tools, and automate repeated work. You are not “using
-              hacker magic”. You are giving precise instructions to the computer.
-            </p>
-            <div class="lessonGrid">
-              <div class="card">
-                <h3>Windows</h3>
-                <p>Use PowerShell first. It is the cleanest modern shell on Windows for learning and scripting.</p>
-                <div class="chips">
-                  <span class="chip">PowerShell</span>
-                  <span class="chip">cmd</span>
-                  <span class="chip">.bat</span>
-                </div>
-              </div>
-              <div class="card">
-                <h3>Linux / macOS</h3>
-                <p>Use bash or zsh. Most beginner terminal tutorials on the internet assume this shell style.</p>
-                <div class="chips">
-                  <span class="chip">bash</span>
-                  <span class="chip">zsh</span>
-                  <span class="chip">sh</span>
-                </div>
-              </div>
-            </div>
-            <div class="callout">
-              <strong>Main difference</strong>
-              Windows PowerShell uses object-oriented commands and Windows-style paths. Linux/macOS shells use
-              text-stream commands and Unix-style paths.
+            <h2>PowerShell vs bash/zsh vs cmd</h2>
+            <div class="grid grid--3">
+              <article class="card"><h3>PowerShell</h3><p>Best beginner shell on Windows. Strong scripting and object-oriented command output.</p></article>
+              <article class="card"><h3>bash / zsh</h3><p>Common on Linux and macOS. Most internet shell examples assume this style.</p></article>
+              <article class="card"><h3>cmd / .bat</h3><p>Older Windows shell and batch scripting. Still useful to recognize, but not the best first choice.</p></article>
             </div>
           </section>
 
           <section class="docSection">
             <span class="docKicker">Copy and run</span>
             <h2>Activity 1: Make your first working folder</h2>
-            <p>Choose the block that matches your device and run it exactly.</p>
             <div class="lessonGrid">
               <div class="card">
                 <h3>Windows PowerShell</h3>
@@ -98,61 +72,85 @@ ls
 cat hello.txt</pre>
               </div>
             </div>
-            <div class="checklist">
-              <div class="checkitem">
-                <strong>Success check</strong>
-                You should see a folder, a file named <code>hello.txt</code>, and its contents printed back to you.
-              </div>
-              <div class="checkitem">
-                <strong>What you just learned</strong>
-                Create a folder, move into it, create a file, list files, and read a file.
-              </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Common command map</span>
+            <h2>Same goal, different shell spelling</h2>
+            <div class="taskGrid">
+              <div class="card"><h3>List files</h3><pre class="codeblock">PowerShell: Get-ChildItem
+bash/zsh: ls</pre></div>
+              <div class="card"><h3>Current folder</h3><pre class="codeblock">PowerShell: Get-Location
+bash/zsh: pwd</pre></div>
+              <div class="card"><h3>Read a file</h3><pre class="codeblock">PowerShell: Get-Content file.txt
+bash/zsh: cat file.txt</pre></div>
+              <div class="card"><h3>Create a file</h3><pre class="codeblock">PowerShell: "text" | Set-Content a.txt
+bash/zsh: echo "text" > a.txt</pre></div>
+              <div class="card"><h3>Delete a file</h3><pre class="codeblock">PowerShell: Remove-Item a.txt
+bash/zsh: rm a.txt</pre></div>
+              <div class="card"><h3>Move a file</h3><pre class="codeblock">PowerShell: Move-Item a.txt notes\
+bash/zsh: mv a.txt notes/</pre></div>
             </div>
           </section>
 
           <section class="docSection">
-            <span class="docKicker">Useful differences</span>
-            <h2>Windows vs Linux/macOS command map</h2>
-            <div class="taskGrid">
-              <div class="card">
-                <h3>List files</h3>
-                <pre class="codeblock">PowerShell: Get-ChildItem
-bash/zsh: ls</pre>
-              </div>
-              <div class="card">
-                <h3>Show current folder</h3>
-                <pre class="codeblock">PowerShell: Get-Location
-bash/zsh: pwd</pre>
-              </div>
-              <div class="card">
-                <h3>Read a file</h3>
-                <pre class="codeblock">PowerShell: Get-Content file.txt
-bash/zsh: cat file.txt</pre>
-              </div>
+            <span class="docKicker">Environment basics</span>
+            <h2>Useful checks</h2>
+            <pre class="codeblock">python --version
+git --version
+node --version</pre>
+            <p>These commands tell you whether important tools are installed and reachable from your shell.</p>
+            <p>To inspect the current path:</p>
+            <pre class="codeblock">PowerShell: $env:Path
+bash/zsh: echo $PATH</pre>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Starter scripts</span>
+            <h2>Small automation examples</h2>
+            <p>Windows batch file example <code>hello.bat</code>:</p>
+            <pre class="codeblock">@echo off
+echo Hello from batch file
+pause</pre>
+            <p>PowerShell script example <code>hello.ps1</code>:</p>
+            <pre class="codeblock">Write-Host "Hello from PowerShell script"</pre>
+            <p>bash script example <code>hello.sh</code>:</p>
+            <pre class="codeblock">echo "Hello from bash script"</pre>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Package mindset</span>
+            <h2>How tools get installed</h2>
+            <div class="docList">
+              <div class="docListItem"><strong>Windows</strong> often uses installers, <code>winget</code>, or package managers.</div>
+              <div class="docListItem"><strong>Linux</strong> often uses <code>apt</code>, <code>dnf</code>, <code>pacman</code>, or similar.</div>
+              <div class="docListItem"><strong>macOS</strong> often uses graphical installers or <code>brew</code>.</div>
+              <div class="docListItem"><strong>Termux</strong> uses package commands inside Android's Linux-like environment.</div>
             </div>
           </section>
 
           <section class="docSection">
             <span class="docKicker">Do something real</span>
-            <h2>Activity 2: Create a tiny project folder for code</h2>
+            <h2>Activity 2: Create a project folder for coding</h2>
+            <pre class="codeblock">mkdir my-first-code
+cd my-first-code
+mkdir notes src
+"# My First Code Folder" | Set-Content README.md</pre>
+            <p>bash/zsh version:</p>
             <pre class="codeblock">mkdir my-first-code
 cd my-first-code
 mkdir notes src
 echo "# My First Code Folder" > README.md</pre>
-            <p>On Windows PowerShell, the last line can also be:</p>
-            <pre class="codeblock">"# My First Code Folder" | Set-Content README.md</pre>
-            <p>
-              Now open that folder in your editor. This is how terminal + file system + editor start working together.
-            </p>
+            <p>Then open the folder in your editor. This is where terminal, files, editor, and Git begin to work together.</p>
           </section>
 
           <section class="docSection">
             <h2>What to do next</h2>
             <div class="miniLinks">
-              <a href="./git.html">Go to Git hands-on</a>
-              <a href="./web-basics.html">Try simple web files</a>
-              <a href="./participate.html">Join the community workflow</a>
-              <a href="./labs.html">Open the labs page</a>
+              <a href="./editors.html">Editors and IDEs</a>
+              <a href="./git.html">Git hands-on</a>
+              <a href="./languages.html">Programming languages</a>
+              <a href="./participate.html">Join the community</a>
             </div>
           </section>
         </main>
@@ -160,15 +158,15 @@ echo "# My First Code Folder" > README.md</pre>
         <aside class="docAside">
           <h3 class="docAsideTitle">Terminal starter checklist</h3>
           <div class="checklist">
-            <div class="checkitem"><strong>1</strong> Open PowerShell or bash</div>
+            <div class="checkitem"><strong>1</strong> Open your shell</div>
             <div class="checkitem"><strong>2</strong> Create one folder</div>
             <div class="checkitem"><strong>3</strong> Create one file</div>
             <div class="checkitem"><strong>4</strong> Read it back</div>
             <div class="checkitem"><strong>5</strong> Open the folder in your editor</div>
           </div>
           <div class="stat">
-            <span class="stat__value">Hands-on rule</span>
-            <span class="stat__label">Every page in this starter track should end with a visible output on your machine.</span>
+            <span class="stat__value">PowerShell first</span>
+            <span class="stat__label">On Windows, PowerShell is the best first shell to learn seriously.</span>
           </div>
         </aside>
       </div>

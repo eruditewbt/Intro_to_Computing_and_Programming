@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editors and IDEs | Introduction to Computing and Programming</title>
+    <meta
+      name="description"
+      content="Hands-on introduction to editors and IDEs: VS Code, project folders, terminals, extensions, debugging, and the first coding workflow."
+    />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">EruditeWBT Course</span>
+          <span class="brand__title">Editors and IDEs</span>
+        </div>
+        <nav class="nav" aria-label="Section navigation">
+          <a href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./setup.html">Setup</a>
+          <a href="./terminal.html">Terminal</a>
+          <a href="./editors.html" class="is-active">Editors</a>
+          <a href="./git.html">Git</a>
+          <a href="./languages.html">Languages</a>
+          <a href="./web-basics.html">Web Basics</a>
+          <a href="./participate.html">Participate</a>
+          <a href="./live.html">Live Programs</a>
+        </nav>
+      </header>
+
+      <div class="docLayout">
+        <main class="docShell">
+          <section class="docHero">
+            <span class="eyebrow">Daily workflow</span>
+            <h1>Your editor is where terminal, code, Git, and projects start working together.</h1>
+            <p class="docIntro">
+              A coding editor is not just a place to type text. It is your project cockpit: files on the left, code in the middle,
+              terminal at the bottom, Git changes on the side, and debugging when things go wrong. For most beginners, VS Code is
+              the best first editor because it grows with you without forcing a heavy IDE too early.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Mental model</span>
+            <h2>Editor vs IDE</h2>
+            <div class="lessonGrid">
+              <div class="card">
+                <h3>Editor</h3>
+                <p>Fast, flexible, good for general coding, notes, web files, scripts, and multi-language work.</p>
+                <div class="chips">
+                  <span class="chip">VS Code</span>
+                  <span class="chip">Sublime Text</span>
+                  <span class="chip">Notepad++</span>
+                </div>
+              </div>
+              <div class="card">
+                <h3>IDE</h3>
+                <p>Heavier, more guided, often built for larger project ecosystems like Java, Android, C#, or complex Flutter work.</p>
+                <div class="chips">
+                  <span class="chip">Visual Studio</span>
+                  <span class="chip">Android Studio</span>
+                  <span class="chip">PyCharm</span>
+                </div>
+              </div>
+            </div>
+            <div class="callout">
+              <strong>Recommendation</strong>
+              Start with VS Code plus the integrated terminal. Add heavier IDEs only when a project path actually needs them.
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Hands-on</span>
+            <h2>Activity 1: Open a real project folder</h2>
+            <ol>
+              <li>Create a folder called <code>editor-practice</code>.</li>
+              <li>Open VS Code.</li>
+              <li>Use <code>File -> Open Folder</code> and open <code>editor-practice</code>.</li>
+              <li>Create 3 files: <code>README.md</code>, <code>notes.txt</code>, and <code>hello.py</code>.</li>
+              <li>Open the integrated terminal and run <code>dir</code> in PowerShell or <code>ls</code> in bash.</li>
+            </ol>
+            <pre class="codeblock"># hello.py
+print("Hello from inside my editor")</pre>
+            <p>Run it from the integrated terminal:</p>
+            <pre class="codeblock">python hello.py</pre>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Starter setup</span>
+            <h2>What to configure first</h2>
+            <div class="taskGrid">
+              <div class="card">
+                <h3>Theme and font size</h3>
+                <p>Make your screen readable. Comfortable reading beats fancy appearance.</p>
+              </div>
+              <div class="card">
+                <h3>Integrated terminal</h3>
+                <p>Use PowerShell on Windows, bash/zsh on Linux/macOS, and keep terminal + code in one window.</p>
+              </div>
+              <div class="card">
+                <h3>Auto save</h3>
+                <p>Turn on auto save so file changes are less likely to disappear.</p>
+              </div>
+              <div class="card">
+                <h3>Format on save</h3>
+                <p>Especially useful for HTML, CSS, JavaScript, TypeScript, and Python once formatters are installed.</p>
+              </div>
+              <div class="card">
+                <h3>Source control view</h3>
+                <p>Use the Git sidebar to see which files changed before you commit.</p>
+              </div>
+              <div class="card">
+                <h3>Extensions</h3>
+                <p>Install only what supports your current path, not every extension you can find.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Useful first extensions</span>
+            <h2>Keep it simple</h2>
+            <div class="docList">
+              <div class="docListItem"><strong>Python</strong> for running and debugging Python files.</div>
+              <div class="docListItem"><strong>Prettier</strong> for formatting HTML, CSS, JavaScript, and Markdown.</div>
+              <div class="docListItem"><strong>ESLint</strong> when you begin serious JavaScript or TypeScript work.</div>
+              <div class="docListItem"><strong>GitLens</strong> later, when you need more Git visibility.</div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Debugging starter idea</span>
+            <h2>When code does not run</h2>
+            <div class="checklist">
+              <div class="checkitem"><strong>1</strong> Read the error message fully.</div>
+              <div class="checkitem"><strong>2</strong> Check the file name and current folder.</div>
+              <div class="checkitem"><strong>3</strong> Confirm the tool is installed, for example <code>python --version</code>.</div>
+              <div class="checkitem"><strong>4</strong> Run the smallest possible test file, not the entire project.</div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <h2>Next step</h2>
+            <div class="miniLinks">
+              <a href="./terminal.html">Terminal hands-on</a>
+              <a href="./git.html">Git hands-on</a>
+              <a href="./languages.html">Programming languages overview</a>
+              <a href="./projects.html">Move into starter builds</a>
+            </div>
+          </section>
+        </main>
+
+        <aside class="docAside">
+          <h3 class="docAsideTitle">Editor rule</h3>
+          <div class="stat">
+            <span class="stat__value">One window, one project</span>
+            <span class="stat__label">A clean project folder plus terminal plus Git is already a serious workflow.</span>
+          </div>
+          <div class="linkList">
+            <a href="./setup.html">Setup paths</a>
+            <a href="./git.html">Git page</a>
+            <a href="./web-basics.html">HTML / CSS / Markdown</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

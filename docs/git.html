@@ -6,7 +6,7 @@
     <title>Git Hands-On | Introduction to Computing and Programming</title>
     <meta
       name="description"
-      content="Hands-on Git guide with real working commands: init, add, commit, status, branch, remote, and push."
+      content="Complete beginner-first Git page: status, add, commit, log, branch, remote, push, pull, .gitignore, collaboration, and safe recovery commands."
     />
     <link rel="stylesheet" href="./site.css" />
   </head>
@@ -20,12 +20,13 @@
         <nav class="nav" aria-label="Section navigation">
           <a href="./index.html">Home</a>
           <a href="./start.html">Start</a>
-          <a href="./syllabus.html">Syllabus</a>
-          <a href="./setup.html">Setup</a>
           <a href="./terminal.html">Terminal</a>
+          <a href="./editors.html">Editors</a>
           <a class="is-active" href="./git.html">Git</a>
+          <a href="./languages.html">Languages</a>
           <a href="./web-basics.html">Web Basics</a>
           <a href="./participate.html">Participate</a>
+          <a href="./live.html">Live Programs</a>
         </nav>
       </header>
 
@@ -33,30 +34,39 @@
         <main class="docShell">
           <section class="docHero">
             <span class="eyebrow">Version control</span>
-            <h1>Git is how you save work properly, not just how you upload code.</h1>
+            <h1>Git protects your work, explains your progress, and makes collaboration possible.</h1>
             <p class="docIntro">
-              Git helps you track changes, explain what changed, undo mistakes more safely, and collaborate with other
-              people. The goal on this page is simple: create a repo, make a change, commit it, and understand what
-              just happened.
+              Git is not just an upload tool. It is your history system. It shows what changed, when it changed, and why it changed.
+              This page takes you from a first local repo to the core commands you need for real team work.
             </p>
           </section>
 
           <section class="docSection">
             <span class="docKicker">Mental model</span>
-            <h2>What Git actually does</h2>
+            <h2>What Git actually tracks</h2>
             <div class="lessonGrid">
               <div class="card">
                 <h3>Working directory</h3>
-                <p>The files you are editing right now.</p>
+                <p>The files you are editing now.</p>
               </div>
               <div class="card">
-                <h3>Repository history</h3>
-                <p>The recorded checkpoints of your work.</p>
+                <h3>Staging area</h3>
+                <p>The files you intentionally prepare for the next commit.</p>
+              </div>
+            </div>
+            <div class="lessonGrid" style="margin-top:16px">
+              <div class="card">
+                <h3>Commit history</h3>
+                <p>Saved checkpoints with messages that explain the change.</p>
+              </div>
+              <div class="card">
+                <h3>Remote</h3>
+                <p>A hosted copy, usually on GitHub, where collaboration and backup happen.</p>
               </div>
             </div>
             <div class="callout">
-              <strong>Simple formula</strong>
-              Edit files -> check status -> add selected files -> commit with a message -> repeat.
+              <strong>Simple workflow</strong>
+              Edit files -> check <code>git status</code> -> add what belongs together -> commit with a useful message -> push when ready.
             </div>
           </section>
 
@@ -71,72 +81,120 @@ git status
 git add README.md
 git commit -m "Add initial README"</pre>
             <div class="checklist">
-              <div class="checkitem">
-                <strong>Success check</strong>
-                After <code>git commit</code>, Git should tell you one file was committed.
-              </div>
-              <div class="checkitem">
-                <strong>If commit fails</strong>
-                Set your name and email first:
-                <pre class="codeblock">git config --global user.name "Your Name"
-git config --global user.email "you@example.com"</pre>
-              </div>
+              <div class="checkitem"><strong>Success check</strong> After the commit, <code>git status</code> should say your working tree is clean.</div>
+              <div class="checkitem"><strong>What you learned</strong> Repo creation, tracking a file, and creating a clean first checkpoint.</div>
             </div>
           </section>
 
           <section class="docSection">
-            <span class="docKicker">Core commands</span>
-            <h2>The small Git set you should know first</h2>
+            <span class="docKicker">Daily commands</span>
+            <h2>The commands you will use the most</h2>
             <div class="taskGrid">
-              <div class="card">
-                <h3>See what changed</h3>
-                <pre class="codeblock">git status</pre>
-              </div>
-              <div class="card">
-                <h3>Add files to the next commit</h3>
-                <pre class="codeblock">git add README.md
-git add .</pre>
-              </div>
-              <div class="card">
-                <h3>Save a checkpoint</h3>
-                <pre class="codeblock">git commit -m "Explain the change"</pre>
-              </div>
+              <div class="card"><h3>See changes</h3><pre class="codeblock">git status</pre></div>
+              <div class="card"><h3>Add selected files</h3><pre class="codeblock">git add README.md
+# or
+git add .</pre></div>
+              <div class="card"><h3>Commit</h3><pre class="codeblock">git commit -m "Explain what changed"</pre></div>
+              <div class="card"><h3>See history</h3><pre class="codeblock">git log --oneline</pre></div>
+              <div class="card"><h3>See unstaged diffs</h3><pre class="codeblock">git diff</pre></div>
+              <div class="card"><h3>See staged diffs</h3><pre class="codeblock">git diff --staged</pre></div>
             </div>
           </section>
 
           <section class="docSection">
-            <span class="docKicker">Do something real</span>
-            <h2>Activity 2: Make a second commit</h2>
-            <pre class="codeblock">echo "This repo is for learning Git." >> README.md
-git status
-git add README.md
-git commit -m "Add purpose line to README"
-git log --oneline</pre>
-            <p>
-              You should now see at least two commits. That means you are already building a usable history.
-            </p>
+            <span class="docKicker">Branches</span>
+            <h2>Use branches when a change deserves its own lane</h2>
+            <pre class="codeblock">git branch feature-homepage
+git switch feature-homepage
+# make changes
+git add .
+git commit -m "Build homepage draft"</pre>
+            <p>Check branches with:</p>
+            <pre class="codeblock">git branch</pre>
+            <p>Switch back:</p>
+            <pre class="codeblock">git switch main</pre>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Remote work</span>
+            <h2>Connect to GitHub and push</h2>
+            <pre class="codeblock">git remote add origin https://github.com/yourname/your-repo.git
+git branch -M main
+git push -u origin main</pre>
+            <p>After this, future pushes are often just:</p>
+            <pre class="codeblock">git push</pre>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Pulling and syncing</span>
+            <h2>When other people or GitHub have newer work</h2>
+            <pre class="codeblock">git pull</pre>
+            <p>If you only want the latest remote info first:</p>
+            <pre class="codeblock">git fetch</pre>
+            <p>Then inspect and merge intentionally.</p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Important hygiene</span>
+            <h2>Use a .gitignore early</h2>
+            <p>Create a file named <code>.gitignore</code> and add things that should not be committed.</p>
+            <pre class="codeblock">__pycache__/
+*.pyc
+.env
+node_modules/
+.vscode/</pre>
+            <p>Adjust it for your actual project. The point is to keep history focused on real source files.</p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Recovery basics</span>
+            <h2>Safe beginner rescue commands</h2>
+            <div class="docList">
+              <div class="docListItem"><strong>Unstage a file</strong><br/><code>git restore --staged filename</code></div>
+              <div class="docListItem"><strong>Discard local changes in one file</strong><br/><code>git restore filename</code></div>
+              <div class="docListItem"><strong>See what happened recently</strong><br/><code>git log --oneline --decorate --graph</code></div>
+            </div>
+            <div class="callout">
+              <strong>Important</strong>
+              Avoid destructive Git commands until you understand them. A clean status check and a clear commit habit prevent most beginner disasters.
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Community use</span>
+            <h2>How Git fits in the EruditeWBT community</h2>
+            <div class="checklist">
+              <div class="checkitem"><strong>1</strong> Use commits as proof of work.</div>
+              <div class="checkitem"><strong>2</strong> Push small working increments instead of waiting for perfection.</div>
+              <div class="checkitem"><strong>3</strong> Send your email if a collaboration repo needs access approval.</div>
+              <div class="checkitem"><strong>4</strong> Link your repo when asking for help so others can see what you actually built.</div>
+            </div>
           </section>
 
           <section class="docSection">
             <h2>What to do next</h2>
             <div class="miniLinks">
-              <a href="./web-basics.html">Try HTML, Markdown, and CSS</a>
-              <a href="./participate.html">Learn the community repo flow</a>
-              <a href="./projects.html">Move into starter builds</a>
+              <a href="./terminal.html">Terminal page</a>
+              <a href="./editors.html">Editors and IDEs</a>
+              <a href="./web-basics.html">HTML / CSS / Markdown</a>
+              <a href="./participate.html">Join the community workflow</a>
             </div>
           </section>
         </main>
 
         <aside class="docAside">
-          <h3 class="docAsideTitle">Git beginner rule</h3>
-          <div class="stat">
-            <span class="stat__value">Commit small</span>
-            <span class="stat__label">Do not wait until everything is perfect. Save small meaningful checkpoints.</span>
+          <h3 class="docAsideTitle">Git starter checklist</h3>
+          <div class="checklist">
+            <div class="checkitem"><strong>1</strong> Create a repo</div>
+            <div class="checkitem"><strong>2</strong> Make one commit</div>
+            <div class="checkitem"><strong>3</strong> Add a .gitignore</div>
+            <div class="checkitem"><strong>4</strong> Push to GitHub</div>
+            <div class="checkitem"><strong>5</strong> Share the repo link</div>
           </div>
           <div class="linkList">
-            <a href="./labs.html">Labs page</a>
-            <a href="./project-paths.html">Project paths</a>
+            <a href="./projects.html">Starter builds</a>
             <a href="https://github.com/eruditewbt/JAVASCRIPT" target="_blank" rel="noreferrer">JAVASCRIPT repo</a>
+            <a href="https://github.com/eruditewbt/HACKCLUB" target="_blank" rel="noreferrer">HACKCLUB repo</a>
           </div>
         </aside>
       </div>

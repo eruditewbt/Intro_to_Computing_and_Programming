@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Programming Languages | Introduction to Computing and Programming</title>
+    <meta
+      name="description"
+      content="Beginner-friendly overview of simple coding languages and where they fit: HTML, Markdown, CSS, JavaScript, TypeScript, Python, SQL, shell scripts, and more."
+    />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">EruditeWBT Course</span>
+          <span class="brand__title">Programming Languages</span>
+        </div>
+        <nav class="nav" aria-label="Section navigation">
+          <a href="./index.html">Home</a>
+          <a href="./start.html">Start</a>
+          <a href="./setup.html">Setup</a>
+          <a href="./terminal.html">Terminal</a>
+          <a href="./editors.html">Editors</a>
+          <a href="./git.html">Git</a>
+          <a href="./languages.html" class="is-active">Languages</a>
+          <a href="./web-basics.html">Web Basics</a>
+          <a href="./participate.html">Participate</a>
+          <a href="./live.html">Live Programs</a>
+        </nav>
+      </header>
+
+      <div class="docLayout">
+        <main class="docShell">
+          <section class="docHero">
+            <span class="eyebrow">Language map</span>
+            <h1>Different languages do different jobs. You do not need all of them at once.</h1>
+            <p class="docIntro">
+              One of the biggest beginner problems is assuming all languages are basically the same. They are not. Some describe pages,
+              some style interfaces, some automate tasks, some build systems, and some query data. This page helps you place each one.
+            </p>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Simple language families</span>
+            <h2>What each one is for</h2>
+            <div class="grid grid--3">
+              <article class="card">
+                <h3>HTML</h3>
+                <p>Structure for web pages: headings, paragraphs, links, forms, images.</p>
+                <pre class="codeblock">&lt;h1&gt;Hello&lt;/h1&gt;</pre>
+              </article>
+              <article class="card">
+                <h3>CSS</h3>
+                <p>Style for web pages: layout, colors, spacing, typography, responsiveness.</p>
+                <pre class="codeblock">h1 { color: teal; }</pre>
+              </article>
+              <article class="card">
+                <h3>Markdown</h3>
+                <p>Readable notes and README files for docs, guides, repos, and project communication.</p>
+                <pre class="codeblock"># Project Title</pre>
+              </article>
+              <article class="card">
+                <h3>JavaScript</h3>
+                <p>Browser logic, Node.js, web apps, interactivity, and product behavior.</p>
+                <pre class="codeblock">console.log("Hello from JS");</pre>
+              </article>
+              <article class="card">
+                <h3>TypeScript</h3>
+                <p>JavaScript with stronger type safety for larger systems and cleaner team work.</p>
+                <pre class="codeblock">const name: string = "EruditeWBT";</pre>
+              </article>
+              <article class="card">
+                <h3>Python</h3>
+                <p>Great beginner language for scripts, automation, data work, and AI-related exploration.</p>
+                <pre class="codeblock">print("Hello from Python")</pre>
+              </article>
+              <article class="card">
+                <h3>SQL</h3>
+                <p>Queries and updates for relational databases.</p>
+                <pre class="codeblock">SELECT * FROM users;</pre>
+              </article>
+              <article class="card">
+                <h3>Shell scripting</h3>
+                <p>Useful for terminal automation in PowerShell, bash, and build workflows.</p>
+                <pre class="codeblock">echo "Hello from shell"</pre>
+              </article>
+              <article class="card">
+                <h3>Dart / C# / C++</h3>
+                <p>Paths for app development, game development, and systems-level work later.</p>
+                <pre class="codeblock">// language-specific later path</pre>
+              </article>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Hands-on</span>
+            <h2>Activity: make one folder with many tiny hello files</h2>
+            <pre class="codeblock">mkdir language-lab
+cd language-lab</pre>
+            <p>Create these files:</p>
+            <pre class="codeblock">index.html
+style.css
+README.md
+hello.py
+hello.js</pre>
+            <p>Suggested contents:</p>
+            <pre class="codeblock"># hello.py
+print("Hello from Python")
+
+# hello.js
+console.log("Hello from JavaScript");</pre>
+            <p>Then run:</p>
+            <pre class="codeblock">python hello.py
+node hello.js</pre>
+          </section>
+
+          <section class="docSection">
+            <span class="docKicker">Choose your next path</span>
+            <h2>Good first repo decisions</h2>
+            <div class="docList">
+              <div class="docListItem"><strong>I want fast scripting and AI experiments</strong> -> go to <code>HACKCLUB</code>.</div>
+              <div class="docListItem"><strong>I want web and app logic</strong> -> go to <code>JAVASCRIPT</code>.</div>
+              <div class="docListItem"><strong>I want stricter team-ready web systems</strong> -> go to <code>TYPESCRIPT</code>.</div>
+              <div class="docListItem"><strong>I want interfaces, visuals, and product experience</strong> -> go to <code>VISUALSANDHCI</code>.</div>
+              <div class="docListItem"><strong>I want cross-platform apps</strong> -> go to <code>DARTANDFLUTTER</code>.</div>
+            </div>
+          </section>
+
+          <section class="docSection">
+            <h2>Next step</h2>
+            <div class="miniLinks">
+              <a href="./web-basics.html">HTML / CSS / Markdown page</a>
+              <a href="./projects.html">Starter builds</a>
+              <a href="./participate.html">Join the community</a>
+            </div>
+          </section>
+        </main>
+
+        <aside class="docAside">
+          <h3 class="docAsideTitle">Beginner rule</h3>
+          <div class="stat">
+            <span class="stat__value">One main language first</span>
+            <span class="stat__label">Use HTML/CSS/Markdown for visible wins, then choose one main programming language for real momentum.</span>
+          </div>
+          <div class="linkList">
+            <a href="https://github.com/eruditewbt/HACKCLUB" target="_blank" rel="noreferrer">HACKCLUB</a>
+            <a href="https://github.com/eruditewbt/JAVASCRIPT" target="_blank" rel="noreferrer">JAVASCRIPT</a>
+            <a href="https://github.com/eruditewbt/TYPESCRIPT" target="_blank" rel="noreferrer">TYPESCRIPT</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

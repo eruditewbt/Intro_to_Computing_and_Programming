@@ -15,6 +15,7 @@ This repo is for:
 - self-learners
 - community instructors
 - schools, clubs, and study groups
+- global community members entering through EruditeWBT
 
 ## What Makes This Different
 
@@ -50,6 +51,7 @@ If you want the fastest path from zero to building:
 Start here, then plug into the wider community:
 
 - Discord: https://discord.gg/8e4bQNknA
+- Telegram: https://t.me/coding_session_by_eruditewbt
 - YouTube: https://www.youtube.com/@eruditewbt
 - LinkedIn: https://www.linkedin.com/in/chemiosis-daniel-34542826a
 - Main community repo: https://github.com/eruditewbt/Tech_Community_by_EruditeWBT
@@ -57,6 +59,10 @@ Start here, then plug into the wider community:
 - HACKCLUB: https://github.com/eruditewbt/HACKCLUB
 - JAVASCRIPT: https://github.com/eruditewbt/JAVASCRIPT
 - TYPESCRIPT: https://github.com/eruditewbt/TYPESCRIPT
+- DARTANDFLUTTER: https://github.com/eruditewbt/DARTANDFLUTTER
+- VISUALSANDHCI: https://github.com/eruditewbt/VISUALSANDHCI
+
+If you need collaborator access to deeper project repos or active build lanes, send your email with your intent so the team can route you faster.
 
 ## Pick a Repo and Start Building
 
@@ -110,6 +116,14 @@ Detailed next-repo setup guide:
 - `docs/syllabus.html`
 - `docs/setup.html`
 - `docs/labs.html`
+- `docs/terminal.html`
+- `docs/editors.html`
+- `docs/git.html`
+- `docs/languages.html`
+- `docs/web-basics.html`
+- `docs/participate.html`
+- `docs/live.html`
+- `docs/visual-hci.html`
 
 ## Core Files
 
@@ -142,6 +156,9 @@ Prepared next-step repos:
 
 - HACKCLUB for Python-first AI and experimentation
 - JAVASCRIPT for JavaScript systems training and collaborative product work
+- TYPESCRIPT for typed web/application systems
+- DARTANDFLUTTER for cross-platform product work
+- VISUALSANDHCI for graphics, design, UI, UX, GUI, and HCI collaboration
 
 The projects are already structured so learners can move quickly into something publishable:
 
@@ -158,6 +175,18 @@ Use these to run the course as a real community system:
 - `templates/LESSON_PLAN_TEMPLATE.md`
 - `templates/DISCORD_WEEKLY_POST.md`
 - `templates/PROOF_OF_WORK_TEMPLATE.md`
+
+## Community Growth Layer
+
+This repo is now also part of a larger public-facing community system:
+
+- courses can become videos and live chats
+- online and physical meetings can be run around the material
+- hackathon products can be displayed and improved
+- custom products and ideas can move toward real users, sponsors, and monetization
+
+The goal is not just to teach syntax.
+The goal is to move people from learning -> participation -> projects -> proof -> opportunity.
 
 ## Outcome
 
